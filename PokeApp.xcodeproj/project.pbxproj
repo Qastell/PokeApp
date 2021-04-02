@@ -8,22 +8,50 @@
 
 /* Begin PBXBuildFile section */
 		3FA47D3B2615A99E008187AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D3A2615A99E008187AC /* AppDelegate.swift */; };
-		3FA47D3D2615A99E008187AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D3C2615A99E008187AC /* SceneDelegate.swift */; };
 		3FA47D3F2615A99E008187AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D3E2615A99E008187AC /* ViewController.swift */; };
 		3FA47D422615A99E008187AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA47D402615A99E008187AC /* Main.storyboard */; };
 		3FA47D442615A9A4008187AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FA47D432615A9A4008187AC /* Assets.xcassets */; };
 		3FA47D472615A9A4008187AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FA47D452615A9A4008187AC /* LaunchScreen.storyboard */; };
+		3FA47D502615AEC8008187AC /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D4F2615AEC8008187AC /* Pokemon.swift */; };
+		3FA47D542615B0A5008187AC /* PokeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D532615B0A5008187AC /* PokeService.swift */; };
+		3FA47D922616DC7A008187AC /* AlertRoutable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D912616DC7A008187AC /* AlertRoutable.swift */; };
+		3FA47D952616DC83008187AC /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D942616DC83008187AC /* Presentable.swift */; };
+		3FA47D982616DCBB008187AC /* PokeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D972616DCBB008187AC /* PokeController.swift */; };
+		3FA47DA02616DD29008187AC /* UIApplication+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47D9F2616DD29008187AC /* UIApplication+Ext.swift */; };
+		3FA47DA826170CB8008187AC /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DA726170CB8008187AC /* RequestType.swift */; };
+		3FA47DAD26170F65008187AC /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DAC26170F65008187AC /* NetworkService.swift */; };
+		3FA47DB2261710B3008187AC /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DB1261710B3008187AC /* ImageService.swift */; };
+		3FA47DF12617236A008187AC /* PokeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3FA47DF02617236A008187AC /* PokeController.xib */; };
+		3FA47DF5261761DF008187AC /* AppStatesObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DF4261761DF008187AC /* AppStatesObserver.swift */; };
+		3FA47DF8261764B1008187AC /* NSNotification+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DF7261764B1008187AC /* NSNotification+Ext.swift */; };
+		3FA47DFB26176BFD008187AC /* LocalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DFA26176BFD008187AC /* LocalNotificationService.swift */; };
+		3FA47DFE26177534008187AC /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DFD26177534008187AC /* UIImage+Ext.swift */; };
+		3FA47E0226177DDD008187AC /* PokeBGTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47E0126177DDD008187AC /* PokeBGTaskService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3FA47D372615A99E008187AC /* PokeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FA47D3A2615A99E008187AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3FA47D3C2615A99E008187AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3FA47D3E2615A99E008187AC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FA47D412615A99E008187AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FA47D432615A9A4008187AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FA47D462615A9A4008187AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FA47D482615A9A4008187AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FA47D4F2615AEC8008187AC /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		3FA47D532615B0A5008187AC /* PokeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeService.swift; sourceTree = "<group>"; };
+		3FA47D912616DC7A008187AC /* AlertRoutable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertRoutable.swift; sourceTree = "<group>"; };
+		3FA47D942616DC83008187AC /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		3FA47D972616DCBB008187AC /* PokeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeController.swift; sourceTree = "<group>"; };
+		3FA47D9F2616DD29008187AC /* UIApplication+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Ext.swift"; sourceTree = "<group>"; };
+		3FA47DA726170CB8008187AC /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		3FA47DAC26170F65008187AC /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		3FA47DB1261710B3008187AC /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		3FA47DF02617236A008187AC /* PokeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokeController.xib; sourceTree = "<group>"; };
+		3FA47DF4261761DF008187AC /* AppStatesObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStatesObserver.swift; sourceTree = "<group>"; };
+		3FA47DF7261764B1008187AC /* NSNotification+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Ext.swift"; sourceTree = "<group>"; };
+		3FA47DFA26176BFD008187AC /* LocalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationService.swift; sourceTree = "<group>"; };
+		3FA47DFD26177534008187AC /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		3FA47E0126177DDD008187AC /* PokeBGTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBGTaskService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +85,92 @@
 			isa = PBXGroup;
 			children = (
 				3FA47D3A2615A99E008187AC /* AppDelegate.swift */,
-				3FA47D3C2615A99E008187AC /* SceneDelegate.swift */,
-				3FA47D3E2615A99E008187AC /* ViewController.swift */,
+				3FA47DB8261711A4008187AC /* RequestType */,
+				3FA47DB52617112B008187AC /* Models */,
+				3FA47DAF26170F6B008187AC /* Services */,
+				3FA47DAA26170E29008187AC /* Extensions */,
+				3FA47D9A2616DCD7008187AC /* Base */,
+				3FA47D9C2616DCDE008187AC /* PokeModule */,
+				3FA47D9D2616DCEC008187AC /* AlertRoutable */,
+				3FA47D9E2616DCF5008187AC /* Presentable */,
 				3FA47D402615A99E008187AC /* Main.storyboard */,
 				3FA47D432615A9A4008187AC /* Assets.xcassets */,
 				3FA47D452615A9A4008187AC /* LaunchScreen.storyboard */,
 				3FA47D482615A9A4008187AC /* Info.plist */,
 			);
 			path = PokeApp;
+			sourceTree = "<group>";
+		};
+		3FA47D9A2616DCD7008187AC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3FA47D3E2615A99E008187AC /* ViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3FA47D9C2616DCDE008187AC /* PokeModule */ = {
+			isa = PBXGroup;
+			children = (
+				3FA47D972616DCBB008187AC /* PokeController.swift */,
+				3FA47DF02617236A008187AC /* PokeController.xib */,
+			);
+			path = PokeModule;
+			sourceTree = "<group>";
+		};
+		3FA47D9D2616DCEC008187AC /* AlertRoutable */ = {
+			isa = PBXGroup;
+			children = (
+				3FA47D912616DC7A008187AC /* AlertRoutable.swift */,
+			);
+			path = AlertRoutable;
+			sourceTree = "<group>";
+		};
+		3FA47D9E2616DCF5008187AC /* Presentable */ = {
+			isa = PBXGroup;
+			children = (
+				3FA47D942616DC83008187AC /* Presentable.swift */,
+			);
+			path = Presentable;
+			sourceTree = "<group>";
+		};
+		3FA47DAA26170E29008187AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3FA47D9F2616DD29008187AC /* UIApplication+Ext.swift */,
+				3FA47DF7261764B1008187AC /* NSNotification+Ext.swift */,
+				3FA47DFD26177534008187AC /* UIImage+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3FA47DAF26170F6B008187AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3FA47DAC26170F65008187AC /* NetworkService.swift */,
+				3FA47D532615B0A5008187AC /* PokeService.swift */,
+				3FA47DB1261710B3008187AC /* ImageService.swift */,
+				3FA47DF4261761DF008187AC /* AppStatesObserver.swift */,
+				3FA47DFA26176BFD008187AC /* LocalNotificationService.swift */,
+				3FA47E0126177DDD008187AC /* PokeBGTaskService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3FA47DB52617112B008187AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FA47D4F2615AEC8008187AC /* Pokemon.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3FA47DB8261711A4008187AC /* RequestType */ = {
+			isa = PBXGroup;
+			children = (
+				3FA47DA726170CB8008187AC /* RequestType.swift */,
+			);
+			path = RequestType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +232,7 @@
 			files = (
 				3FA47D472615A9A4008187AC /* LaunchScreen.storyboard in Resources */,
 				3FA47D442615A9A4008187AC /* Assets.xcassets in Resources */,
+				3FA47DF12617236A008187AC /* PokeController.xib in Resources */,
 				3FA47D422615A99E008187AC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +244,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA47DFE26177534008187AC /* UIImage+Ext.swift in Sources */,
+				3FA47DAD26170F65008187AC /* NetworkService.swift in Sources */,
 				3FA47D3F2615A99E008187AC /* ViewController.swift in Sources */,
+				3FA47D542615B0A5008187AC /* PokeService.swift in Sources */,
+				3FA47D982616DCBB008187AC /* PokeController.swift in Sources */,
+				3FA47DF8261764B1008187AC /* NSNotification+Ext.swift in Sources */,
+				3FA47D922616DC7A008187AC /* AlertRoutable.swift in Sources */,
+				3FA47DB2261710B3008187AC /* ImageService.swift in Sources */,
+				3FA47D502615AEC8008187AC /* Pokemon.swift in Sources */,
+				3FA47DFB26176BFD008187AC /* LocalNotificationService.swift in Sources */,
 				3FA47D3B2615A99E008187AC /* AppDelegate.swift in Sources */,
-				3FA47D3D2615A99E008187AC /* SceneDelegate.swift in Sources */,
+				3FA47DA02616DD29008187AC /* UIApplication+Ext.swift in Sources */,
+				3FA47D952616DC83008187AC /* Presentable.swift in Sources */,
+				3FA47DA826170CB8008187AC /* RequestType.swift in Sources */,
+				3FA47E0226177DDD008187AC /* PokeBGTaskService.swift in Sources */,
+				3FA47DF5261761DF008187AC /* AppStatesObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
