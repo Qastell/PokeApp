@@ -4,7 +4,7 @@
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>com.mrq.backupPokemon</string>
+		<string>com.mrq.processingFetchPokemon</string>
 		<string>com.mrq.fetchPokemon</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>

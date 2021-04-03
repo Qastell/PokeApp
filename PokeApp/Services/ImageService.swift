@@ -13,7 +13,7 @@ class ImageService: NetworkService {
     
     func downloadImage(url: URL, completion: @escaping (UIImage) -> Void) {
         DispatchQueue.global(qos: .utility).async {
-            NetworkService.urlSession.dataTask(with: url) { data, response, error in
+            self.urlSession.dataTask(with: url) { data, response, error in
                 guard let data = data, let image = UIImage(data: data) else { return }
                 DispatchQueue.main.async {
                     completion(image)

@@ -1,5 +1,5 @@
 //
-//  PokeBGTaskService.swift
+//  PokeBGProcessingTaskService.swift
 //  PokeApp
 //
 //  Created by Кирилл Романенко on 03.04.2021.
@@ -8,28 +8,28 @@
 import UIKit
 import BackgroundTasks
 
-class PokeBGTaskService {
-    static let shared = PokeBGTaskService()
+class PokeBGProcessingTaskService {
+    static let shared = PokeBGProcessingTaskService()
     private init() {}
     
     private let appStatesObserver = AppStatesObserver()
     
     func registerBGTasks() {
         appStatesObserver.delegate = self
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: Identifiers.fetchPokemon, using: nil) { [weak self] task in
-            guard let task = task as? BGAppRefreshTask else { return }
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: Identifiers.processingFetchPokemon, using: nil) { [weak self] task in
+            guard let task = task as? BGProcessingTask else { return }
             self?.handleAppRefreshTask(task: task)
         }
     }
     
     /**
      force the command to work
-     e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.mrq.fetchPokemon"]
+     e -l objc -- (void)[[BGTaskScheduler sharedScheduler] _simulateLaunchForTaskWithIdentifier:@"com.mrq.processingFetchPokemon"]
      */
-    private func handleAppRefreshTask(task: BGAppRefreshTask) {
+    private func handleAppRefreshTask(task: BGProcessingTask) {
         task.expirationHandler = {
             task.setTaskCompleted(success: false)
-            NetworkService.urlSession.invalidateAndCancel()
+            URLSession.shared.invalidateAndCancel()
         }
         
         let randomNumber = Int.random(in: 0..<151)
@@ -45,8 +45,10 @@ class PokeBGTaskService {
     }
     
     func scheduleBackgroundPokemonFetch() {
-        let pokemonFetchTask = BGAppRefreshTaskRequest(identifier: Identifiers.fetchPokemon)
+        let pokemonFetchTask = BGProcessingTaskRequest(identifier: Identifiers.processingFetchPokemon)
         pokemonFetchTask.earliestBeginDate = Date(timeIntervalSinceNow: 15 * 60)
+        pokemonFetchTask.requiresExternalPower = false
+        pokemonFetchTask.requiresNetworkConnectivity = true
         
         do {
             try BGTaskScheduler.shared.submit(pokemonFetchTask)
@@ -56,14 +58,14 @@ class PokeBGTaskService {
     }
 }
 
-extension PokeBGTaskService: AppStatesObserverDelegate {
+extension PokeBGProcessingTaskService: AppStatesObserverDelegate {
     func didEnterBackground() {
         scheduleBackgroundPokemonFetch()
     }
 }
 
-private extension PokeBGTaskService {
+private extension PokeBGProcessingTaskService {
     struct Identifiers {
-        static let fetchPokemon = "com.mrq.fetchPokemon"
+        static let processingFetchPokemon = "com.mrq.processingFetchPokemon"
     }
 }

@@ -26,7 +26,8 @@
 		3FA47DF8261764B1008187AC /* NSNotification+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DF7261764B1008187AC /* NSNotification+Ext.swift */; };
 		3FA47DFB26176BFD008187AC /* LocalNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DFA26176BFD008187AC /* LocalNotificationService.swift */; };
 		3FA47DFE26177534008187AC /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47DFD26177534008187AC /* UIImage+Ext.swift */; };
-		3FA47E0226177DDD008187AC /* PokeBGTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47E0126177DDD008187AC /* PokeBGTaskService.swift */; };
+		3FA47E0226177DDD008187AC /* PokeBGAppRefreshTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47E0126177DDD008187AC /* PokeBGAppRefreshTaskService.swift */; };
+		3FA47E0B261815A1008187AC /* PokeBGProcessingTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA47E0A261815A1008187AC /* PokeBGProcessingTaskService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,7 +52,8 @@
 		3FA47DF7261764B1008187AC /* NSNotification+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Ext.swift"; sourceTree = "<group>"; };
 		3FA47DFA26176BFD008187AC /* LocalNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationService.swift; sourceTree = "<group>"; };
 		3FA47DFD26177534008187AC /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
-		3FA47E0126177DDD008187AC /* PokeBGTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBGTaskService.swift; sourceTree = "<group>"; };
+		3FA47E0126177DDD008187AC /* PokeBGAppRefreshTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBGAppRefreshTaskService.swift; sourceTree = "<group>"; };
+		3FA47E0A261815A1008187AC /* PokeBGProcessingTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeBGProcessingTaskService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +154,8 @@
 				3FA47DB1261710B3008187AC /* ImageService.swift */,
 				3FA47DF4261761DF008187AC /* AppStatesObserver.swift */,
 				3FA47DFA26176BFD008187AC /* LocalNotificationService.swift */,
-				3FA47E0126177DDD008187AC /* PokeBGTaskService.swift */,
+				3FA47E0126177DDD008187AC /* PokeBGAppRefreshTaskService.swift */,
+				3FA47E0A261815A1008187AC /* PokeBGProcessingTaskService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				3FA47D542615B0A5008187AC /* PokeService.swift in Sources */,
 				3FA47D982616DCBB008187AC /* PokeController.swift in Sources */,
 				3FA47DF8261764B1008187AC /* NSNotification+Ext.swift in Sources */,
+				3FA47E0B261815A1008187AC /* PokeBGProcessingTaskService.swift in Sources */,
 				3FA47D922616DC7A008187AC /* AlertRoutable.swift in Sources */,
 				3FA47DB2261710B3008187AC /* ImageService.swift in Sources */,
 				3FA47D502615AEC8008187AC /* Pokemon.swift in Sources */,
@@ -258,7 +262,7 @@
 				3FA47DA02616DD29008187AC /* UIApplication+Ext.swift in Sources */,
 				3FA47D952616DC83008187AC /* Presentable.swift in Sources */,
 				3FA47DA826170CB8008187AC /* RequestType.swift in Sources */,
-				3FA47E0226177DDD008187AC /* PokeBGTaskService.swift in Sources */,
+				3FA47E0226177DDD008187AC /* PokeBGAppRefreshTaskService.swift in Sources */,
 				3FA47DF5261761DF008187AC /* AppStatesObserver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
