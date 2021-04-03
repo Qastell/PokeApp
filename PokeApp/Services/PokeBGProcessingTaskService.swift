@@ -62,6 +62,10 @@ extension PokeBGProcessingTaskService: AppStatesObserverDelegate {
     func didEnterBackground() {
         scheduleBackgroundPokemonFetch()
     }
+    
+    func willEnterForeground() {
+        BGTaskScheduler.shared.cancelAllTaskRequests()
+    }
 }
 
 private extension PokeBGProcessingTaskService {
